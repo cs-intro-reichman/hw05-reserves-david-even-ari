@@ -37,7 +37,6 @@ public class GameOfLife {
 	private static void test3(String fileName, int Ngen) {
 		int[][] board = read(fileName);
 		for (int gen = 0; gen < Ngen; gen++) {
-			System.out.println("");
 			System.out.println("Generation " + gen + ":");
 			print(board);
 			board = evolve(board);
@@ -138,7 +137,7 @@ public class GameOfLife {
 			System.out.println("");
 			for(int j= 1;j < cols-1; j++){
 				System.out.printf(" %d",arr[i][j]);
-	}}
+	}}System.out.println("");
 }
 		
     // Displays the board. Living and dead cells are represented by black and white squares, respectively.
